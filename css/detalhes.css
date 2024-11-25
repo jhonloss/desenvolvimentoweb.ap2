@@ -1,0 +1,125 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f4f5f8;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#athlete-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.athlete-detail {
+    width: 60%;
+    background-color: #F6F4F4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 50%;
+}
+
+.athlete-detail .athlete-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.athlete-detail img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 4px;
+}
+
+.athlete-detail .athlete-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.athlete-detail .athlete-infos p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.athlete-detail strong {
+    font-weight: bold;
+}
+
+.back-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#back-to-home-button {
+    background-color: #606470;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#back-to-home-button:hover {
+    background-color: #060707;
+}
+
+@media (max-width: 768px) {
+    #athlete-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .athlete-detail {
+        width: 90%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .athlete-detail .athlete-imagem {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .athlete-detail img {
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .athlete-detail .athlete-infos {
+        text-align: center;
+        align-items: center;
+    }
+
+    .athlete-detail .athlete-infos p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .back-button-container {
+        margin-top: 20px;
+    }
+}
